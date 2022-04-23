@@ -18,13 +18,15 @@ int year = Method3();
 // Console.WriteLine(year);
 
 // вид 4. И возвращают и получают
-string Method4(int count, string c){
+string Method4(int count, string text){
   string result = String.Empty;
   int i = 0;
   while (i < count){
-    Console.WriteLine(c);
+   result = result + text + " ";
     i++;
   }
   return result;
 }
-string res = Method4(5, "Это метод 4");
+string res = Method4(text: "Это метод 4", count: 5);
+
+ Console.WriteLine(res);
