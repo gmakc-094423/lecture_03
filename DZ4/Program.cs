@@ -1,17 +1,16 @@
 ﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и возводит число A в натуральную степень B.
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
+Console.WriteLine($"\nЗадача 25. Возведене числа A в натуральную степень B");
 
-/* int Exponentiation(int numberA, int numberB){
-  for (int i=1; i < numberB; i++){
-    numberA *= numberA;
-  }
-  return numberA;
+double Exponentiation(int numberA, int numberB){
+  double result = Math.Pow(numberA, numberB);
+  return result;
 }
 
-for (int j=1; j < 4; j++){
+// for (int j=1; j < 3; j++){
 
-  Console.WriteLine($"\n Шаг № {j} ");
+  // Console.WriteLine($"\n Шаг № {j} ");
 
   Console.Write("Введите число A: ");
   int numberA = Convert.ToInt32(Console.ReadLine());
@@ -19,17 +18,17 @@ for (int j=1; j < 4; j++){
   Console.Write("Введите число B: ");
   int numberB = Convert.ToInt32(Console.ReadLine());
 
-  int exponentiation = Exponentiation(numberA, numberB);
+  double exponentiation = Exponentiation(numberA, numberB);
 
   Console.WriteLine("Ответ: " + exponentiation);
-} */
+// }
 
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-
-/* Console.Write("Введите число N: ");
+Console.WriteLine($"\nЗадача 27. Выдаёт сумму цифр в числе");
+Console.Write("Введите число N: ");
 int numberN = Convert.ToInt32(Console.ReadLine());
 
   int SumNumber(int numberN){
@@ -47,13 +46,13 @@ int numberN = Convert.ToInt32(Console.ReadLine());
   }
 
 int sumNumber = SumNumber(numberN);
-Console.WriteLine("Сумма цифр в числе: " + sumNumber); */
+Console.WriteLine("Сумма цифр в числе: " + sumNumber);
 
 // Задача 29: Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
 // 1, 2, 5, 7, 19 -> [1, 2, 5, 7, 19]
 // 6, 1, 33 -> [6, 1, 33]
 
-
+Console.WriteLine($"\nЗадача 29. Ряд чисел преобразует в массив");
 Console.Write("Введите ряд чисел, разделенных запятой : ");
 string? seriesOfNumbers = Console.ReadLine();
 
