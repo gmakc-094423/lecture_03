@@ -3,25 +3,23 @@
 // 2, 4 -> 16
 Console.WriteLine($"\nЗадача 25. Возведене числа A в натуральную степень B");
 
-double Exponentiation(int numberA, int numberB){
-  double result = Math.Pow(numberA, numberB);
-  return result;
+int Exponentiation(int numberA, int numberB){
+  int result = 1;
+  for(int i=1; i <= numberB; i++){
+    result = result * numberA;
+  }
+    // int result = Math.Pow(numberA, numberB);
+    return result;
 }
-
-// for (int j=1; j < 3; j++){
-
-  // Console.WriteLine($"\n Шаг № {j} ");
 
   Console.Write("Введите число A: ");
   int numberA = Convert.ToInt32(Console.ReadLine());
-
   Console.Write("Введите число B: ");
   int numberB = Convert.ToInt32(Console.ReadLine());
 
-  double exponentiation = Exponentiation(numberA, numberB);
-
+  int exponentiation = Exponentiation(numberA, numberB);
   Console.WriteLine("Ответ: " + exponentiation);
-// }
+
 
 // Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 // 452 -> 11
