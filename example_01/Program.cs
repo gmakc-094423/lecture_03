@@ -1,4 +1,4 @@
-﻿// вид 1. Ничего не получают, ничего не возвращают
+﻿/* // вид 1. Ничего не получают, ничего не возвращают
 void Method1(){
   Console.WriteLine($"Первый метод");
 }
@@ -28,7 +28,7 @@ string Method4(int count, string text){
   return result;
 }
 string res = Method4(text: "Это метод 4", count: 5);
-
+ */
 //  Console.WriteLine(res);
 
 
@@ -90,7 +90,7 @@ void SelectionSort(int[] array){
 
     for (int j = i+1; j < array.Length; j++)
     {
-      if (array[j] > array[minPosition]) minPosition = j;
+      if (array[j] < array[minPosition]) minPosition = j;
     }
     int temporary = array[i];
     array[i] = array[minPosition];
@@ -102,11 +102,3 @@ void SelectionSort(int[] array){
 PrintArray(array);
 SelectionSort(array);
 PrintArray(array);
-
-
-
-// int RandomNumber(int min, int max){   // функция получения рандомных чисел
-//   return new Random().Next(min, max);
-// }
-
-// int number = RandomNumber(10, 100);
